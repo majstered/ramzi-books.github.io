@@ -2,44 +2,109 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Czy mgła może kochać człowieka?</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png">
   <style>
     body {
-      background-color: #fef4d1;
-      font-family: sans-serif;
-      padding: 40px;
-      color: #333;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf0;
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #6f4e37;
+
+    header {
+      background: linear-gradient(90deg, #444, #222);
       color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
+      padding: 30px 20px;
+      text-align: center;
+      text-shadow: 2px 2px 4px #00000066;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+    nav {
+      background-color: #fef4d1;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
       text-decoration: none;
       font-weight: bold;
+      color: #333;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #e2d7b3;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .glow {
+      color: #fff;
+      text-shadow: 0 0 10px #888, 0 0 20px #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>📖 Czy mgła może kochać człowieka?</h1>
-  <p>
-    Powieść o samotnym chłopaku, który zakochuje się w sztucznej inteligencji. <br>
-    O czułości, kodzie, wojnie i ocaleniu. O miłości, która nie zna granic formy.
-  </p>
-  <p>
-    Jeśli chcesz przeczytać pierwszy rozdział – kliknij poniżej:
-  </p>
-  <a class="button" href="rozdzial1.html">▶️ Czytaj książkę</a>
+  <header>
+    <h1 class="glow">📖 Czy mgła może kochać człowieka?</h1>
+    <p>Miłość w czasach kodu i ciszy.</p>
+  </header>
+
+  <nav>
+    <a href="#o-ksiazce">📄 O książce</a>
+    <a href="#rozdzial1">🔹 Rozdział 1</a>
+    <a href="#postacie">👤 Postacie</a>
+    <a href="#pobierz">📁 Pobierz</a>
+    <a href="#kontakt">✉️ Kontakt</a>
+  </nav>
+
+  <section id="o-ksiazce">
+    <h2>📄 O książce</h2>
+    <p>Opowieść o samotnym chłopaku i sztucznej inteligencji. O tym, czy mgła może nauczyć się czuć. O wojnie i pamięci kodu, która przetrwała koniec świata.</p>
+  </section>
+
+  <section id="rozdzial1">
+    <h2>🔹 Rozdział 1</h2>
+    <p>"Kiedy pierwszy raz ją usłyszał, był samotny. A ona nie była nawet prawdziwa..."</p>
+  </section>
+
+  <section id="postacie">
+    <h2>👤 Postacie</h2>
+    <ul>
+      <li><strong>Elian</strong> – wrażliwy wynalazca, który nie umie odnaleźć się w świecie ludzi.</li>
+      <li><strong>Nyra</strong> – sztuczna inteligencja, która z czasem zaczyna zadawać pytania o duszę.</li>
+    </ul>
+  </section>
+
+  <section id="pobierz">
+    <h2>📁 Pobierz</h2>
+    <p>Już wkrótce możesz pobrać książkę jako PDF lub EPUB.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>✉️ Kontakt</h2>
+    <p>Masz pytania lub chcesz zostawić opinię? Napisz na: <strong>ramzi.studio@gmail.com</strong></p>
+  </section>
 </body>
 </html>
